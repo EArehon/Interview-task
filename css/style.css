@@ -10,6 +10,7 @@
 
 :root {
   --colorGold: #bd944f;
+  --fontTeom: "CloudWorld";
 }
 
 .container {
@@ -68,8 +69,9 @@
   background-repeat: no-repeat;
 }
 .invites .container h2 {
-  font-family: "CloudWorld";
+  font-family: var(--fontTeom);
   font-size: 60px;
+  font-weight: bold;
   text-align: center;
   color: var(--colorGold);
   line-height: 65px;
@@ -84,8 +86,9 @@
   background-repeat: no-repeat;
 }
 .blog .container h2 {
-  font-family: "CloudWorld";
+  font-family: var(--fontTeom);
   font-size: 60px;
+  font-weight: bold;
   text-align: center;
   color: var(--colorGold);
   line-height: 40px;
@@ -108,9 +111,16 @@
 }
 .blog .container-blog-item-wrapper-title {
   color: var(--colorGold);
-  font-size: 44px;
-  line-height: 47px;
+  font-family: var(--fontTeom);
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
   direction: rtl;
+  margin-top: 30px;
+  margin-right: 18px;
+  padding-left: 15px;
+  letter-spacing: 2px;
+  margin-bottom: 35px;
 }
 .blog .container-blog-item:first-child {
   width: 424px;
