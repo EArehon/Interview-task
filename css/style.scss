@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "CloudWorld";
+    src: url(../assets/fonts/CloudWorld.ttf) format('truetype');
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,16 +11,78 @@
 
 .container {
     max-width: 1600px;
+    width: 100%;
     margin: 0 auto;
-    background-image: url(../assets/img/headerBg.webp);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .header {
     .container{
+        background-image: url(../assets/img/headerBg-2.png), url(../assets/img/headerBg.webp);
+        background-position: top right, top;
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+        position: relative;
         height: 700px;
-        width: 100%;
+        padding-top: 161px;
+        padding-left: 354px;
+        
+        .cosmetics {
+            position: absolute;
+            z-index: 20;
+        }
+        .serenity-legend {
+            top: 164px;
+            left: 0;
+            width: 247px;
+            height: 271px;
+            background-image: url(../assets/img/417.png);
+        }
+
+        .victoria-secret {
+            top:173px;
+            left: 130px;
+            width: 353px;
+            height: 568px;
+            background-image: url(../assets/img/victorias-secret.png);
+        }
+
+        .ritual-of-carma {
+            background-image: url(../assets/img/ritual-of-carma.png);
+            width: 286px;
+            height: 256px;
+            top: 83px;
+            right: 145px;
+        }
+
+        .molton-brown {
+            background-image: url(../assets/img/molton-brown.png);
+            width: 303px;
+            height: 472px;
+            top: 321px;
+            right: 0px;
+
+        }
     }
 }
+
+.invites {
+    .container {
+        padding: 30px 220px;
+
+        background-image: url(../assets/img/headerBg.webp);
+        background-position: -700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h2 {
+            font-family: "CloudWorld";
+            font-size: 60px;
+            text-align: center;
+            color: #bd944f;
+            line-height: 65px;
+            direction: rtl;
+        }
+
+    }
+}
+
