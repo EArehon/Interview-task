@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --colorGold: #bd944f;
+}
+
 .container {
   max-width: 1600px;
   width: 100%;
@@ -58,17 +62,56 @@
 }
 
 .invites .container {
-  padding: 30px 220px;
+  padding: 85px 120px;
   background-image: url(../assets/img/headerBg.webp);
-  background-position: -700px;
+  background-position: center -700px;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .invites .container h2 {
   font-family: "CloudWorld";
   font-size: 60px;
   text-align: center;
-  color: #bd944f;
+  color: var(--colorGold);
   line-height: 65px;
   direction: rtl;
+  letter-spacing: 3px;
+}
+
+.blog .container {
+  padding: 60px 120px;
+  background-image: url(../assets/img/headerBg.webp);
+  background-position: center -1130px;
+  background-repeat: no-repeat;
+}
+.blog .container h2 {
+  font-family: "CloudWorld";
+  font-size: 60px;
+  text-align: center;
+  color: var(--colorGold);
+  line-height: 40px;
+  direction: rtl;
+  letter-spacing: -1px;
+}
+.blog .container-blog {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 30px;
+}
+.blog .container-blog-item {
+  display: block;
+}
+.blog .container-blog-item-wrapper {
+  background-color: white;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.blog .container-blog-item-wrapper-title {
+  color: var(--colorGold);
+  font-size: 44px;
+  line-height: 47px;
+  direction: rtl;
+}
+.blog .container-blog-item:first-child {
+  width: 424px;
 }

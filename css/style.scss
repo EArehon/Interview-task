@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --colorGold: #bd944f;
+}
+
 .container {
     max-width: 1600px;
     width: 100%;
@@ -67,21 +71,72 @@
 
 .invites {
     .container {
-        padding: 30px 220px;
-
+        padding: 85px 120px;
         background-image: url(../assets/img/headerBg.webp);
-        background-position: -700px;
+        background-position: center -700px;
         background-repeat: no-repeat;
-        background-size: cover;
 
         h2 {
             font-family: "CloudWorld";
             font-size: 60px;
-            text-align: center;
-            color: #bd944f;
+            text-align: center; 
+            color: var(--colorGold);
             line-height: 65px;
             direction: rtl;
+            letter-spacing: 3px;
         }
+
+    }
+}
+
+.blog {
+    .container {
+        padding: 60px 120px;
+        background-image: url(../assets/img/headerBg.webp);
+        background-position: center -1130px;
+        background-repeat: no-repeat;
+
+        h2 {
+            font-family: "CloudWorld";
+            font-size: 60px;
+            text-align: center; 
+            color: var(--colorGold);
+            line-height: 40px;
+            direction: rtl;
+            letter-spacing: -1px;
+        }
+
+        &-blog {
+            display: flex;
+            flex-direction: row-reverse;
+            margin-top: 30px;
+
+            &-item{
+                display: block;
+
+                &-wrapper {
+                    background-color: white;
+                    padding: 12px;
+                    display: flex;
+                    flex-direction: column;
+
+                    &-title {
+                        color: var(--colorGold);
+                        font-size: 44px;
+                        line-height: 47px;
+                        direction: rtl;
+                    }
+
+                }
+
+                &:first-child {
+                    width: 424px;
+                }
+            }
+
+
+        }
+
 
     }
 }
