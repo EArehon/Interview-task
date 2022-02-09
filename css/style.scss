@@ -12,6 +12,7 @@
 :root {
     --colorGold: #bd944f;
     --fontTeom: "CloudWorld";
+    --fontPloni: 'Roboto', sans-serif;
 }
 
 .container {
@@ -20,12 +21,22 @@
     margin: 0 auto;
 }
 
+.wrapper {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url(../assets/img/headerBg-2.png), url(../assets/img/headerBg.webp);
+    background-position: top right, top;
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+}
+
 .header {
     .container{
-        background-image: url(../assets/img/headerBg-2.png), url(../assets/img/headerBg.webp);
+        /* background-image: url(../assets/img/headerBg-2.png), url(../assets/img/headerBg.webp);
         background-position: top right, top;
         background-repeat: no-repeat;
-        background-size: auto, cover;
+        background-size: auto, cover; */
         position: relative;
         height: 700px;
         padding-top: 161px;
@@ -73,8 +84,8 @@
 .invites {
     .container {
         padding: 85px 120px;
-        background-image: url(../assets/img/headerBg.webp);
-        background-position: center -700px;
+        //background-image: url(../assets/img/headerBg.webp);
+        //background-position: center -700px;
         background-repeat: no-repeat;
 
         h2 {
@@ -94,8 +105,8 @@
 .blog {
     .container {
         padding: 60px 120px;
-        background-image: url(../assets/img/headerBg.webp);
-        background-position: center -1130px;
+        //background-image: url(../assets/img/headerBg.webp);
+        //background-position: center -1130px;
         background-repeat: no-repeat;
 
         h2 {
@@ -112,7 +123,10 @@
         &-blog {
             display: flex;
             flex-direction: row-reverse;
-            margin-top: 30px;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 95px;
+
 
             &-item{
                 display: block;
@@ -127,27 +141,249 @@
                         color: var(--colorGold);
                         font-family: var(--fontTeom);
                         font-weight: bold;
-                        font-size: 40px;
-                        line-height: 45px;
+                        font-size: 44px;
+                        line-height: 47px;
                         direction: rtl;
                         margin-top: 30px;
                         margin-right: 18px;
-                        padding-left: 15px;
-                        letter-spacing: 2px;
+                        padding-left: 0px;
+                        letter-spacing: 1px;
                         margin-bottom: 35px;
 
                     }
+                    &-row {
+                        display: flex;
+                        flex-direction: row-reverse;
+                        background-color: white;
+                        padding: 12px;
+                        margin-top: 55px;
+
+                        &-title {
+                            margin-right: 30px;
+                            padding-left: 30px;
+                            color: var(--colorGold);
+                            font-family: var(--fontTeom);
+                            font-weight: bold;
+                            font-size: 44px;
+                            line-height: 47px;
+                            direction: rtl;
+                            margin-top: 30px;
+                            letter-spacing: 1px;
+                            margin-bottom: 35px;
+                        }
+                    }
+                
                 }
+
+
 
                 &:first-child {
                     width: 424px;
                 }
+
+                &:last-child {
+                    width: 603px;
+                }
+
+                &-link {
+                    margin-top: 0px;
+                    direction: rtl;
+                    display: flex;
+                    justify-content: flex-end;
+
+                    a {
+                        font-family: var(--fontTeom);
+                        font-weight: 400;
+                        font-size: 40px;
+                        line-height: 33px;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
             }
-
-
         }
-
-
     }
 }
 
+
+.catalog-section {
+    .container {
+        background-image: url(../assets/img/catalogBg.png);
+        background-repeat: no-repeat;
+        background-position: 0 37%;
+        padding-top: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-family: var(--fontTeom);
+            color: var(--colorGold);
+            font-size: 60px;
+            letter-spacing: 1px;
+            direction: rtl;
+        }
+
+        .promo {
+            width: 618px;
+            height: 334px;
+            background-color: #bd944f;
+            margin-top: 26px;
+            padding-right: 60px;
+            padding-top: 9px;
+            background-image: url(../assets/img/promoBg.png);
+            background-repeat: no-repeat;
+            background-position: calc(50% + 6px) 95px;
+
+            h3 {
+                font-family: var(--fontTeom);
+                color: white;
+                direction: rtl;
+                font-size: 60px;
+                letter-spacing: 2px;
+            }
+        }
+
+        .catalog-items {
+                display: flex;
+                flex-direction: row-reverse;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 35px;
+                margin-top: 135px;
+
+                &-item {
+                    .wrapper {
+                        width: 517px;
+                        height: 469px;
+                        background-image: url(../assets/img/catalogItemsBg.png);
+                        background-position: top;
+                        background-repeat: no-repeat;
+                        display: flex;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        direction: rtl;
+                        position: relative;
+
+                        .bath {
+                            &-green {
+                                position: absolute;
+                                top: 21%;
+                                right: 42%;
+                            }
+                            &-yellow {
+                                position: absolute;
+                                top: 60%;
+                                right: 61%;
+                            }
+                            &-417 {
+                                position: absolute;
+                                top: 61%;
+                                right: 8%;
+                            }
+                        }
+
+                        .body {
+                            &-white {
+                                position: absolute;
+                                top: 34%;
+                                right: 17%;
+                            }
+
+                            &-green {
+                                position: absolute;
+                                top: 26%;
+                                right: 41%;
+                            }
+                            &-yellow {
+                                position: absolute;
+                                top: 40%;
+                                right: 60%;
+                            }
+                        }
+
+                        .hadns {
+                            &-green {
+                                position: absolute;
+                                top: 42%;
+                                right: 6%;
+                            }
+                            &-yellow {
+                                position: absolute;
+                                top: 12%;
+                                right: 48%;
+                            }
+                        }
+
+                        .peeling {
+                            &-red {
+                                position: absolute;
+                                top: 22%;
+                                right: 47%;
+                            }
+                            &-green {
+                                position: absolute;
+                                top: 39%;
+                                right: 2%;
+                            }
+                        }
+
+                    h3 {
+                        margin-top: 20px;
+                        margin-right: 5%;
+                        font-family: var(--fontPloni);
+                        font-size: 55px;
+                        color: var(--colorGold);
+                        background-color: white;
+                        font-weight: 400;
+                        padding: 17px 10px;
+                        min-width: 360px;
+                        text-align: center;
+                        word-spacing: 2px;
+                        padding: 17px 10px;
+
+
+                        span {
+                            font-weight: 700;
+                        }
+                    }
+
+                }
+
+                    &-link {
+                        direction: rtl;
+                        text-align: left;
+                        margin-top: 30px;
+
+                        a {
+                            color: black;
+                            text-decoration: none;
+                            font-family: var(--fontTeom);
+                            font-size: 40px;
+                            letter-spacing: -2px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }       
+    }
+
+.footer {
+    .container {
+        direction: rtl;
+        text-align: center;
+        margin-top: 120px;
+        padding-bottom: 50px;
+        font-family: var(--fontTeom);
+        font-size: 25px;
+        font-weight: normal;
+        color: black;
+    }
+}
+
+.flacon {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
