@@ -25,60 +25,119 @@
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
-    background-image: url(../assets/img/headerBg-2.png), url(../assets/img/headerBg.webp);
-    background-position: top right, top;
+    background-image: url(../assets/img/headerBg.webp);
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: auto, cover;
-    
+    background-size: cover;
     min-width: 375px;
 }
 
 .header {
     .container{
         position: relative;
-        height: 700px;
         padding-top: 161px;
         display: flex;
         justify-content: center;
         padding-left: 28px;
+        background-image: url(../assets/img/headerBg-2.png);
+        background-position: top right;
+        background-position-x: -50%;
+        background-repeat: repeat-y;
+        background-size: auto;
+        min-height: 280px;
 
+        @media (max-width: 1100px) {
+            padding-top: 10%;
+            background-size: 50%;
+            background-position-x: 141%;
+            background-position-y: 4%;
+            
+        }
 
+        @media (max-width: 768px) {
+            padding-top: 5%;
+        }
+
+        @media (max-width: 375px) {
+            padding: 20px 10px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+
+        .logo {
+            width: 920px;
+            height: auto;
+        }
         
         .cosmetics {
             position: absolute;
             z-index: 20;
         }
         .serenity-legend {
-            top: 164px;
+            width: 15%;
+            top: 23%;
             left: 0;
-            width: 247px;
-            height: 271px;
-            background-image: url(../assets/img/417.png);
+            @media (max-width: 768px) {
+                top: 3%;
+                width: 20%;
+            }
+            @media (max-width: 375px) {
+                top: -1%;
+                left: 0;
+                width: 26%;
+            }
         }
 
         .victoria-secret {
-            top:173px;
-            left: 130px;
-            width: 353px;
-            height: 568px;
-            background-image: url(../assets/img/victorias-secret.png);
+            width: 22%;
+            top: 24%;
+            left: 8%;
+            @media (max-width: 1440px) {
+                left: 4%;
+            }
+            @media (max-width: 1200px) {
+                left: 2%;
+            }
+            @media (max-width: 768px) {
+                left: 35%;
+                top: 35%;
+            }
+            @media (max-width: 375px) {
+                width: 30%;
+                top: 38.5%;
+                left: 29.5%;
+            }
         }
 
         .ritual-of-carma {
-            background-image: url(../assets/img/ritual-of-carma.png);
-            width: 286px;
-            height: 256px;
-            top: 83px;
-            right: 145px;
+            width: 18%;
+            top: 11%;
+            right: 11px;
+            @media (max-width: 768px) {
+                width: 22%;
+                top: 2%;
+            }
+            @media (max-width: 375px) {
+                width: 25%;
+                top: 0;
+                right: -2%;
+            }
         }
 
         .molton-brown {
-            background-image: url(../assets/img/molton-brown.png);
-            width: 303px;
-            height: 472px;
-            top: 321px;
-            right: 0px;
-
+            width: 18%;
+            top: 45%;
+            right: 0;
+            @media (max-width: 768px) {
+                width: 25%;
+                top: 35%;
+            }
+            @media (max-width: 375px) {
+                top: 40%;
+            }
         }
     }
 }
@@ -114,6 +173,13 @@
                 font-size: 30px;
                 line-height: 30px;
                 letter-spacing: 1.5px;
+            }
+
+            @media (max-width: 375px) {
+                padding-top: 65px;
+                font-size: 29px;
+                line-height: 31px;
+                letter-spacing: 1;
             }
         }
 
@@ -165,6 +231,11 @@
 
             &-item{
                 display: block;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
 
                 &-wrapper {
                     background-color: white;
@@ -231,6 +302,9 @@
 
                 &:last-child {
                     width: 603px;
+                    @media (max-width: 510px) {
+                        width: 100%;
+                    }
                 }
 
                 &-link {
@@ -270,6 +344,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @media (max-width: 1320px) {
+            background-image: none;
+        }
 
         @media (max-width: 860px) {
             padding: 30px 35px;
@@ -335,6 +413,15 @@
                         flex-direction: column;
                         direction: rtl;
                         position: relative;
+
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+
+                        @media (max-width: 1130px) {
+                            width: calc(40%);
+                        }
 
                         .bath {
                             &-green {
@@ -412,6 +499,11 @@
                         text-align: center;
                         word-spacing: 2px;
                         padding: 17px 10px;
+
+                        @media (max-width: 1130px) {
+                            font-size: 40px;
+                            min-width: 300px;
+                        }
 
 
                         span {
