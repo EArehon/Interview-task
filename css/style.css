@@ -28,17 +28,16 @@
   background-position: top right, top;
   background-repeat: no-repeat;
   background-size: auto, cover;
+  min-width: 375px;
 }
 
 .header .container {
-  /* background-image: url(../assets/img/headerBg-2.png), url(../assets/img/headerBg.webp);
-  background-position: top right, top;
-  background-repeat: no-repeat;
-  background-size: auto, cover; */
   position: relative;
   height: 700px;
   padding-top: 161px;
-  padding-left: 354px;
+  display: flex;
+  justify-content: center;
+  padding-left: 28px;
 }
 .header .container .cosmetics {
   position: absolute;
@@ -77,6 +76,16 @@
   padding: 85px 120px;
   background-repeat: no-repeat;
 }
+@media (max-width: 860px) {
+  .invites .container {
+    padding: 85px 20px;
+  }
+}
+@media (max-width: 708px) {
+  .invites .container {
+    padding: 0 5px;
+  }
+}
 .invites .container h2 {
   font-family: var(--fontTeom);
   font-size: 60px;
@@ -87,12 +96,29 @@
   direction: rtl;
   letter-spacing: 3px;
 }
-
-.blog .container {
-  padding: 60px 120px;
-  background-repeat: no-repeat;
+@media (max-width: 860px) {
+  .invites .container h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
 }
-.blog .container h2 {
+@media (max-width: 708px) {
+  .invites .container h2 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.blog-title .container {
+  padding: 60px 120px;
+}
+@media (max-width: 708px) {
+  .blog-title .container {
+    padding: 15px 10px;
+  }
+}
+.blog-title .container h2 {
   font-family: var(--fontTeom);
   font-size: 60px;
   font-weight: bold;
@@ -102,12 +128,29 @@
   direction: rtl;
   letter-spacing: -1px;
 }
+@media (max-width: 860px) {
+  .blog-title .container h2 {
+    font-size: 45px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 708px) {
+  .blog-title .container h2 {
+    font-size: 25px;
+    line-height: 25px;
+    padding: 0 15px;
+  }
+}
+
+.blog .container {
+  padding: 40px 120px;
+}
 .blog .container-blog {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row-reverse;
   justify-content: center;
   gap: 30px;
-  margin-top: 95px;
 }
 .blog .container-blog-item {
   display: block;
@@ -130,6 +173,11 @@
   padding-left: 0px;
   letter-spacing: 1px;
   margin-bottom: 35px;
+}
+@media (max-width: 708px) {
+  .blog .container-blog-item-wrapper-title {
+    font-size: 20px;
+  }
 }
 .blog .container-blog-item-wrapper-row {
   display: flex;
@@ -154,6 +202,11 @@
 .blog .container-blog-item:first-child {
   width: 424px;
 }
+@media (max-width: 510px) {
+  .blog .container-blog-item:first-child {
+    width: 100%;
+  }
+}
 .blog .container-blog-item:last-child {
   width: 603px;
 }
@@ -170,16 +223,26 @@
   line-height: 33px;
   text-decoration: none;
   color: black;
+  transition: 0.3s;
+}
+.blog .container-blog-item-link a:hover {
+  color: var(--colorGold);
+  transition: 0.3s;
 }
 
 .catalog-section .container {
   background-image: url(../assets/img/catalogBg.png);
   background-repeat: no-repeat;
   background-position: 0 37%;
-  padding-top: 65px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 860px) {
+  .catalog-section .container {
+    padding: 30px 35px;
+  }
 }
 .catalog-section .container h2 {
   font-family: var(--fontTeom);
@@ -187,17 +250,31 @@
   font-size: 60px;
   letter-spacing: 1px;
   direction: rtl;
+  text-align: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 860px) {
+  .catalog-section .container h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 708px) {
+  .catalog-section .container h2 {
+    font-size: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+  }
 }
 .catalog-section .container .promo {
   width: 618px;
   height: 334px;
   background-color: #bd944f;
-  margin-top: 26px;
-  padding-right: 60px;
-  padding-top: 9px;
-  background-image: url(../assets/img/promoBg.png);
-  background-repeat: no-repeat;
-  background-position: calc(50% + 6px) 95px;
+}
+@media (max-width: 708px) {
+  .catalog-section .container .promo {
+    width: 100%;
+    height: auto;
+  }
 }
 .catalog-section .container .promo h3 {
   font-family: var(--fontTeom);
@@ -305,6 +382,11 @@
   font-size: 40px;
   letter-spacing: -2px;
   line-height: 20px;
+  transition: 0.3s;
+}
+.catalog-section .container .catalog-items-item-link a:hover {
+  color: var(--colorGold);
+  transition: 0.3s;
 }
 
 .footer .container {
