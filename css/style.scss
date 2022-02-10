@@ -49,6 +49,7 @@
         @media (max-width: 1100px) {
             padding-top: 10%;
             background-size: 50%;
+            background-repeat: repeat-y;
             background-position-x: 141%;
             background-position-y: 4%;
             
@@ -77,9 +78,9 @@
             z-index: 20;
         }
         .serenity-legend {
-            width: 15%;
-            top: 23%;
-            left: -2%;
+            width: 20%;
+            top: 26%;
+            left: -4%;
             @media (max-width: 1200px) {
                 top: -1%;
                 width: 20%;
@@ -91,8 +92,8 @@
         }
 
         .victoria-secret {
-            width: 22%;
-            top: 24%;
+            width: 23%;
+            top: 27%;
             left: 8%;
             @media (max-width: 1440px) {
                 left: 4%;
@@ -110,8 +111,8 @@
 
         .ritual-of-carma {
             width: 18%;
-            top: 11%;
-            right: 11px;
+            top: 13%;
+            right: 9%;
 
             @media (max-width: 768px) {
                 width: 25%;
@@ -122,8 +123,8 @@
 
         .molton-brown {
             width: 18%;
-            top: 45%;
-            right: 0;
+            top: 50%;
+            right: 1%;
             
             @media (max-width: 1200px) {
                 top: 50%;
@@ -158,6 +159,7 @@
             line-height: 65px;
             direction: rtl;
             letter-spacing: 3px;
+            padding-top: 60px;
 
             @media (max-width: 860px) {
                 font-size: 45px;
@@ -453,7 +455,7 @@
                         flex-direction: column;
                         direction: rtl;
                         position: relative;
-                        padding-bottom: 65%;
+                        padding-bottom: 68%;
                         @media (max-width: 600px){
                             padding-bottom: 85%;
                         }
@@ -666,7 +668,7 @@
     .container {
         direction: rtl;
         text-align: center;
-        margin-top: 120px;
+        margin-top: 115px;
         padding-bottom: 50px;
         font-family: var(--fontTeom);
         font-size: 25px;
